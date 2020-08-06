@@ -1,0 +1,15 @@
+class RrToRspecConverter::TextTransformerOptions
+  public
+
+  def file_path: () -> untyped
+
+  def file_path=: (untyped) -> untyped
+
+  def quiet=: (untyped) -> untyped
+
+  def quiet?: () -> untyped
+
+  private
+
+  def initialize: () -> untyped
+end

@@ -201,7 +201,7 @@ describe RrToRspecConverter::TextTransformer do
   end
 
   describe 'any_instance_of' do
-    pending 'dont_allow' do
+    xcontext 'dont_allow' do
       it 'rewrites as expect().not_to receive' do
         result = transform(<<-RUBY)
           any_instance_of(User) do |o|
