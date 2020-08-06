@@ -1,0 +1,4 @@
+module RrToRspecConverter
+end
+
+RrToRspecConverter::VERSION: String

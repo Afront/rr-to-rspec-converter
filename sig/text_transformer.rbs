@@ -1,0 +1,17 @@
+class RrToRspecConverter::TextTransformer
+  public
+
+  def transform: () -> untyped
+
+  private
+
+  def initialize: (untyped content, ?untyped options) -> untyped
+
+  def line_indent: (untyped node) -> untyped
+
+  def log: (untyped str) -> untyped
+
+  def range: (untyped start_pos, untyped end_pos) -> untyped
+
+  def remove_never_node: (untyped node) -> untyped
+end
