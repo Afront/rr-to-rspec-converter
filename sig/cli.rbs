@@ -1,11 +1,11 @@
 class RrToRspecConverter::CLI
   public
 
-  def log: (untyped str) -> untyped
+  def log: (String str) -> void
 
-  def run: () -> untyped
+  def run: () -> void
 
   private
 
-  def initialize: () -> untyped
+  def initialize: () -> void
 end
