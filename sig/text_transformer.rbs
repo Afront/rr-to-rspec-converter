@@ -1,17 +1,29 @@
 class RrToRspecConverter::TextTransformer
   public
 
-  def transform: () -> untyped
+  def transform: () -> String
 
   private
 
-  def initialize: (untyped content, ?untyped options) -> untyped
+  def initialize: (String content, ?RrToRspecConverter::TextTransformerOptions options) -> void
 
-  def line_indent: (untyped node) -> untyped
+  def line_indent: (untyped node) -> String
 
-  def log: (untyped str) -> untyped
+  def log: (String str) -> void
 
-  def range: (untyped start_pos, untyped end_pos) -> untyped
+  def range: (Integer start_pos, Integer end_pos) -> Parser::Source::Range
 
-  def remove_never_node: (untyped node) -> untyped
+  def remove_never_node: (Astrolabe::Node node) -> bool
+end
+
+module Parser
+  module Source
+    class Range
+    end
+  end
+end
+
+module Astrolabe
+  class Node
+  end
 end

@@ -1,13 +1,10 @@
 class RrToRspecConverter::TextTransformerOptions
   public
 
-  def file_path: () -> untyped
+  attr_accessor file_path: String?
+  attr_writer quiet: bool
 
-  def file_path=: (untyped) -> untyped
-
-  def quiet=: (untyped) -> untyped
-
-  def quiet?: () -> untyped
+  def quiet?: () -> bool
 
   private
 
