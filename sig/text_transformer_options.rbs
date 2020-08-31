@@ -8,5 +8,5 @@ class RrToRspecConverter::TextTransformerOptions
 
   private
 
-  def initialize: () -> untyped
+  def initialize: () -> void
 end

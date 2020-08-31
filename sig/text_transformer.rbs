@@ -7,7 +7,7 @@ class RrToRspecConverter::TextTransformer
 
   def initialize: (String content, ?RrToRspecConverter::TextTransformerOptions options) -> void
 
-  def line_indent: (untyped node) -> String
+  def line_indent: (Astrolabe::Node node) -> String
 
   def log: (String str) -> void
 
